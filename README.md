@@ -1,9 +1,14 @@
-# api documentation for  [thunkify (v2.1.2)](https://github.com/visionmedia/node-thunkify)  [![npm package](https://img.shields.io/npm/v/npmdoc-thunkify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-thunkify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-thunkify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-thunkify)
+# npmdoc-thunkify
+
+#### api documentation for  [thunkify (v2.1.2)](https://github.com/visionmedia/node-thunkify)  [![npm package](https://img.shields.io/npm/v/npmdoc-thunkify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-thunkify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-thunkify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-thunkify)
+
 #### Turn callbacks, arrays, generators, generator functions, and promises into a thunk
 
-[![NPM](https://nodei.co/npm/thunkify.png?downloads=true)](https://www.npmjs.com/package/thunkify)
+[![NPM](https://nodei.co/npm/thunkify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/thunkify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-thunkify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-thunkify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-thunkify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-thunkify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-thunkify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-thunkify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-thunkify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-thunkify/build/screenCapture.npmPackageListing.svg)
 
@@ -41,13 +46,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "tjholowaychuk",
-            "email": "tj@vision-media.ca"
+            "name": "tjholowaychuk"
         }
     ],
     "name": "thunkify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/visionmedia/node-thunkify.git"
@@ -55,16 +58,6 @@
     "version": "2.1.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module thunkify](#apidoc.module.thunkify)
-
-
-
-# <a name="apidoc.module.thunkify"></a>[module thunkify](#apidoc.module.thunkify)
 
 
 
