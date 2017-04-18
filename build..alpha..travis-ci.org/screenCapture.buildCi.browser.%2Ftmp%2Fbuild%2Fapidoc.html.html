@@ -54,12 +54,61 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.thunkify">module thunkify</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.thunkify.thunkify">
+            function <span class="apidocSignatureSpan"></span>thunkify
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.thunkify" id="apidoc.module.thunkify">module thunkify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.thunkify.thunkify" id="apidoc.element.thunkify.thunkify">
+        function <span class="apidocSignatureSpan"></span>thunkify
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function thunkify(fn){
+  assert('function' == typeof fn, 'function required');
+
+  return function(){
+    var args = new Array(arguments.length);
+    var ctx = this;
+
+    for(var i = 0; i &lt; args.length; ++i) {
+      args[i] = arguments[i];
+    }
+
+    return function(done){
+      var called;
+
+      args.push(function(){
+        if (called) return;
+        called = true;
+        done.apply(null, arguments);
+      });
+
+      try {
+        fn.apply(ctx, args);
+      } catch (err) {
+        done(err);
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
